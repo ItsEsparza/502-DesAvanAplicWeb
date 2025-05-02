@@ -209,6 +209,7 @@ function LoginForm({ onLogin }: { onLogin: (email: string, password: string) => 
           <label style={styles.label}>Email</label>
           <input
             type="email"
+            name ="username"
             style={styles.input}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -447,8 +448,8 @@ function MainApp() {
           <LoginForm onLogin={login} />
           {error && (
              // Using loginContainer style for error message placement consistency
-            <div style={{ ...styles.loginContainer, ...styles.error, marginTop: '20px', padding: '10px 30px' }}>
-              {error}
+            <div className="error" style={{ ...styles.loginContainer, ...styles.error, marginTop: '20px', padding: '10px 30px' }}>
+             {error}
             </div>
           )}
         </div>
