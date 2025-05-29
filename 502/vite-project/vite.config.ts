@@ -3,17 +3,19 @@ import { defineConfig } from 'vite'
 import { fileURLToPath } from 'url'
 import { dirname, resolve } from 'path'
 
+// 1) Obtenemos __filename y __dirname correctamente
 const __filename = fileURLToPath(import.meta.url)
-const __dirname = dirname(__filename)
+const __dirname  = dirname(__filename)
 
 export default defineConfig({
   base: './',
   build: {
     rollupOptions: {
       input: {
+        // Página principal
         main: resolve(__dirname, 'index.html'),
-        // fija la ruta correcta aquí:
-        menu: resolve(__dirname, '/class1/A01784521/menu/menu.html')
+        // Tu HTML secundario: apunta al path real dentro de src/
+        menu: resolve(__dirname, 'src/class1/A01784521/menu/menu.html')
       }
     }
   }
