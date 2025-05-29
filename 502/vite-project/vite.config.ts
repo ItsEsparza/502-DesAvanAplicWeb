@@ -13,10 +13,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        // página principal
-        main: resolve(__dirname, 'index.html'),
         // tu HTML secundario
-        menu: resolve(__dirname, 'src/class1/A01784521/menu/menu.html'),
+        menu: resolve(__dirname, '/menu'),
       }
     }
   }
