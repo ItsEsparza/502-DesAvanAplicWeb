@@ -15,7 +15,7 @@ export default defineConfig({
         // Página principal
         main: resolve(__dirname, 'index.html'),
         // Tu HTML secundario: apunta al path real dentro de src/
-        menu: resolve(__dirname, 'src/class1/A01784521/menu/index.html')
+        menu: resolve(__dirname, 'src/class1/A01784521/index.html')
       }
     }
   }
