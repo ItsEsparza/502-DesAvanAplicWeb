@@ -1,15 +1,15 @@
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { useState } from "react";
+//import { useState } from "react";
 
 function App() {
 
 
-  const navigateTo = (path: string) => {
+  //const navigateTo = (path: string) => {
     // You might want to use React Router instead of window.location
-    window.location.href = path;
-};
+    //window.location.href = path;
+//};
 
 
 
