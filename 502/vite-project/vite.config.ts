@@ -12,8 +12,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-       
-        menu: resolve(__dirname, 'menu.html')
+        // fija la ruta correcta aquí:
+        menu: resolve(__dirname, '/src/class1/A01784521/menu/menu.html')
       }
     }
   }
