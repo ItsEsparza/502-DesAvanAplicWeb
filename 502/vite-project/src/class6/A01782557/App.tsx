@@ -428,7 +428,7 @@ function MainApp() {
           <LoginForm onLogin={login} />
           {error && (
              // Using loginContainer style for error message placement consistency
-            <div style={{ ...styles.loginContainer, ...styles.error, marginTop: '20px', padding: '10px 30px' }}>
+            <div style={{ ...styles.loginContainer, ...styles.error, marginTop: '20px', padding: '10px 30px' } as React.CSSProperties}>
               {error}
             </div>
           )}

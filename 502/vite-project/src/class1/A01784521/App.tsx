@@ -141,9 +141,15 @@ function App() {
           
           <span style={styles.label}>Email:</span>
           <span style={styles.value}>{email}</span>
+
+          <span style={styles.label}>phone:</span>
+          <span style={styles.value}>{phone}</span>
           
           <span style={styles.label}>Skill:</span>
           <span style={styles.value}>{primarySkill}</span>
+
+          <span style={styles.label}>Skill2:</span>
+          <span style={styles.value}>{secondarySkill}</span>
         </div>
       </section>
       
