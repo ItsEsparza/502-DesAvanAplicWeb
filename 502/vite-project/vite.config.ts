@@ -16,7 +16,7 @@ export default defineConfig({
         // página principal
         main: resolve(__dirname, 'index.html'),
         // tu HTML secundario
-        menu: resolve(__dirname, 'src/class1/A01784521/menu.html'),
+        menu: resolve(__dirname, 'src/class1/A01784521/menu/menu.html'),
       }
     }
   }
