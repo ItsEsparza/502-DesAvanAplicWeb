@@ -27,7 +27,7 @@ function App() {
 
       <div className="card">
         <button>
-            <a href="http://172.16.62.127/src/class1/A01784521/menu/menu.html">A01784521 Activities index Facundo</a>
+            <a href="/src/class1/A01784521/menu/menu.html">A01784521 Activities index Facundo</a>
         </button>
       </div>
     </div>
