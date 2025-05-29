@@ -1,8 +1,23 @@
+// vite.config.ts
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { fileURLToPath } from 'url'
+import { dirname, resolve } from 'path'
 
-// https://vite.dev/config/
+// Para poder usar __dirname en un config ESM/TS
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
 export default defineConfig({
-  plugins: [react()],
-  base: '/',
+  // si tu app se va a servir desde una IP o ruta relativa, esto ayuda a que los assets funcionen
+  base: './',
+  build: {
+    rollupOptions: {
+      input: {
+        // página principal
+        main: resolve(__dirname, 'index.html'),
+        // tu HTML secundario
+        menu: resolve(__dirname, 'src/class1/A01784521/menu.html'),
+      }
+    }
+  }
 })
