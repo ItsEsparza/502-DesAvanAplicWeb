@@ -9,10 +9,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         app: path.resolve(__dirname, 'index.html'),
-        menu: path.resolve(__dirname, 'src/menu/A01784521/index.html'),
+        menu: path.resolve(__dirname, 'src/class1/A01784521/index.html'),
       }
     },
-    outDir: 'dist',
+    outDir: 'dist', // carpeta de salida común
     emptyOutDir: true
   }
 })
