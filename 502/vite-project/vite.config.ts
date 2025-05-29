@@ -13,7 +13,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         // fija la ruta correcta aquí:
-        menu: resolve(__dirname, '/src/class1/A01784521/menu/menu.html')
+        menu: resolve(__dirname, '/class1/A01784521/menu/menu.html')
       }
     }
   }
