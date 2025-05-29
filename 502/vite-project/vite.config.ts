@@ -14,7 +14,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         // tu HTML secundario
-        menu: resolve(__dirname, '/menu'),
+        menu: resolve(__dirname, 'src/class1/A01784521/menu/menu.html'),
       }
     }
   }
