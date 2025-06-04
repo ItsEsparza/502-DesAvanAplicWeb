@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, FormEvent, ReactNode } from 'react';
+import { createContext, useContext, useState, useEffect, FormEvent, ReactNode } from 'react';
 import Notificacions from '../components/Notificacions'
 import { closeWebSocket } from '../websocket';
 
