@@ -8,7 +8,7 @@ function getWebSocketUrl(): string {
   
   // In development, use localhost
   if (import.meta.env.DEV) {
-    return 'ws://localhost:8080';
+    return 'ws://172.16.27:8080';
   }
   
   // In production without explicit URL, return empty string
