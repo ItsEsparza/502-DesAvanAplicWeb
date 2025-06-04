@@ -7,13 +7,16 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "ws-server": "node src/class7/ws-server.cjs",
+    "preview-with-ws": "npm run ws-server & npm run preview"
   },
   "dependencies": {
     "formik": "^2.4.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.5.0",
+    "ws": "^8.18.2",
     "yup": "^1.6.1"
   },
   "devDependencies": {

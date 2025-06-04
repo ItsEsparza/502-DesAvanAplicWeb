@@ -30,8 +30,7 @@ export default defineConfig({
         // Class 6
         'src/class6/A01782557/index': resolve(__dirname, 'src/class6/A01782557/index.html'),
 
-	//Class 7
-	
+	      //Class 7
         'src/class7/A01782557/index': resolve(__dirname, 'src/class7/A01782557/index.html'),
 	}
     }

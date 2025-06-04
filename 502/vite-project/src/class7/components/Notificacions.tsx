@@ -18,6 +18,16 @@ const Notificacions: React.FC<NotificacionsProps> = ({ user }) => {
   useEffect(() => {
     console.log('Conectando WebSocket solo una vez');
     const ws = getWebSocket();
+    
+    // If WebSocket is not available (e.g., in production), show mock notifications
+    if (!ws) {
+      console.log('WebSocket no disponible, mostrando notificaciones simuladas');
+      setNotifications([
+        'Tu gasto con ID EXP123 ha sido aprobado.',
+        'Nuevo gasto pendiente de aprobación: EXP124'
+      ]);
+      return;
+    }
   
     const handleMessage = (event: MessageEvent) => {
       try {
